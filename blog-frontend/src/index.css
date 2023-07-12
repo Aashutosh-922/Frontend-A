@@ -1,0 +1,224 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7fafc;
+  color: #333;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button.primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button.primary:hover {
+  background-color: #0056b3;
+}
+
+button.danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.danger:hover {
+  background-color: #a71d2a;
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.container.dark {
+  background-color: #222;
+  border-radius: 4px;
+}
+
+h1.dark {
+  color: #fff;
+}
+
+h2.dark {
+  color: #fff;
+}
+
+input.dark,
+textarea.dark {
+  background-color: #555;
+  color: #fff;
+  border-color: #444;
+}
+
+button.primary.dark {
+  background-color: #0056b3;
+}
+
+button.danger.dark {
+  background-color: #a71d2a;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+}
+
+.slider-dark {
+  background-color: #2196f3;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.slider-dark:before {
+  transform: translateX(20px);
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+
+
+.w-12 {
+  width: 3rem;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+
+.toggle-checkbox:checked + .toggle-label {
+  transform: translateX(100%);
+  background-color: #2196f3;
+}
+
+.toggle-checkbox:focus + .toggle-label {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+.toggle-checkbox:active + .toggle-label {
+  background-color: #2196f3;
+}
+
+.toggle-label {
+  transition: background-color 0.3s;
+}
+
+/* Rest of your CSS styles */
+
+.dark {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+.dark input {
+  background-color: #4a5568;
+  color: #fff;
+}
+
+.dark input::placeholder {
+  color: #d1d5db;
+}
+
+.dark input:focus {
+  outline-color: #9fa6b2;
+}
+
+.dark textarea {
+  background-color: #4a5568;
+  color: #fff;
+}
+
+.dark textarea::placeholder {
+  color: #d1d5db;
+}
+
+.dark textarea:focus {
+  outline-color: #9fa6b2;
+}
+
+
+.label-dark-mode {
+  text-align: center;
+  text-align: justify;
+}
+
+
+
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
